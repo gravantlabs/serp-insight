@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>SERP Insight</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <header>
+      <div class="title-block">
+        <h1>SERP Insight</h1>
+        <p id="query-text" class="query-text"></p>
+      </div>
+      <button id="copy-all" class="copy-all" type="button" hidden>Copy all</button>
+    </header>
+    <div id="view-tabs" class="view-tabs" role="tablist" aria-label="Views"
+        hidden>
+      <button id="tab-overview" role="tab" aria-controls="overview-panel"
+          aria-selected="true">Overview</button>
+      <button id="tab-results" role="tab" aria-controls="results-panel"
+          aria-selected="false">Results <i></i></button>
+      <button id="tab-ai" role="tab" aria-controls="ai-panel"
+          aria-selected="false">AI <i></i></button>
+      <button id="tab-signals" role="tab" aria-controls="signals-panel"
+          aria-selected="false">Signals <i></i></button>
+    </div>
+    <main>
+      <p id="status-message" class="status-message" role="status"></p>
+      <section id="overview-panel" role="tabpanel"
+          aria-labelledby="tab-overview" hidden></section>
+      <section id="results-panel" role="tabpanel"
+          aria-labelledby="tab-results" hidden></section>
+      <section id="ai-panel" role="tabpanel" aria-labelledby="tab-ai"
+          hidden></section>
+      <section id="signals-panel" role="tabpanel"
+          aria-labelledby="tab-signals" hidden></section>
+    </main>
+    <footer>
+      <a href="https://gravantlabs.com/?utm_source=serp-insight&amp;utm_medium=extension"
+          target="_blank" rel="noopener">
+        Built by
+        <picture>
+          <source srcset="logo-dark.svg" media="(prefers-color-scheme: dark)">
+          <img src="logo.svg" alt="Gravant Labs" height="10">
+        </picture>
+      </a>
+    </footer>
+    <script src="docid.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>

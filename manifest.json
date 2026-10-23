@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "SERP Insight",
+  "version": "0.1.0",
+  "description": "See how Google reads a search: topic entity, places, page IDs, AI sources, highlights and sections.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "SERP Insight"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "webRequest"
+  ],
+  "host_permissions": [
+    "https://www.google.com/*"
+  ]
+}
